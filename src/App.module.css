@@ -1,4 +1,33 @@
 .title {
-    color: red;
     text-align: center;
+}
+.counter {
+    text-align: center;
+    font-size: 48px;
+}
+.wrapper {
+    text-align: center;
+}
+.buttons {
+
+}
+.buttonPlus {
+    background: red;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    color:antiquewhite;
+    font-weight: bolder;
+
+}
+.buttonMinus {
+    background: green;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 10px;
+    color:antiquewhite; 
+    font-weight: bolder;
+
 }

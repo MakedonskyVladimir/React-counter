@@ -14,9 +14,11 @@ const App = () => {
   return (
     <>
       <h3 className={cl.title}>Counter</h3>
-      <h1>{count}</h1>
-      <button onClick={onClickPlus}>Plus</button>
-      <button onClick={onClickMinus}>Minus</button>
+      <h1 className={cl.counter}>{count}</h1>
+      <div className={cl.wrapper}>
+        <button className={cl.buttonPlus} onClick={onClickPlus}>Plus</button>
+        <button className={cl.buttonMinus} onClick={onClickMinus}>Minus</button>
+      </div>
     </>
   )
 }
