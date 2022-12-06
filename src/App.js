@@ -1,21 +1,21 @@
+import React from "react";
 
-import React, { useState } from "react";
-function App() {
-  
-let [count, setCount] = useState(100)
-let counterPlus = () => {
-  setCount(count++)
-}
+const App = () => {
+  const [count, setCount] = React.useState(0)
+
+  const onClickPlus = () => {
+    setCount(count + 1)
+  }
+  const onClickMinus = () => {
+    setCount(count - 1)
+  }
   return (
-
     <>
-      <h1>Счетчик</h1>
-      <h2>{count}</h2>
-      <button onClick={counterPlus}>+</button>
-      <button onClick={() => setCount(count--)}>-</button>
+      <h3>Counter</h3>
+      <h1>{count}</h1>
+      <button onClick={onClickPlus}>Plus</button>
+      <button onClick={onClickMinus}>Minus</button>
     </>
-
   )
 }
-
-export default App;
+export default App
